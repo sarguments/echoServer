@@ -1,9 +1,10 @@
 #include "stdafx.h"
+#include "hoxy_Header.h"
 #include "hoxy_CmdStart.h"
 
 CCmdStart::CCmdStart()
 {
-	_wsetlocale(LC_ALL, L"korean");
+	_wsetlocale(LC_ALL, L"");
 	CCmdStart::CmdDebugText(L"Locale Init", true);
 
 	//// 콘솔 창 띄우기
@@ -15,7 +16,6 @@ CCmdStart::CCmdStart()
 
 CCmdStart::~CCmdStart()
 {
-	_wsetlocale(LC_ALL, L"");
 }
 
 void CCmdStart::CmdDebugText(WCHAR* text, bool bParam)

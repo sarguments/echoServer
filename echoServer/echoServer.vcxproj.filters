@@ -24,7 +24,13 @@
     <ClInclude Include="hoxy_CmdStart.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="hoxy_NetLib.h">
+    <ClInclude Include="SocketUtil.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPSocket.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="hoxy_Header.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -32,13 +38,16 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="echoServer.cpp">
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketUtil.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPSocket.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="hoxy_CmdStart.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="hoxy_NetLib.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
