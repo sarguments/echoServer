@@ -5,12 +5,12 @@ int main(void)
 {
 	CCmdStart MyCmd;
 	CCmdStart::CmdDebugText(L"SERVER START", true);
-	
+
 	SocketUtil::WSAStart();
 
 	TCPSocket* myTcpSocket = nullptr;
 	myTcpSocket = SocketUtil::CreateTCPSocket(INET);
-	
+
 	SOCKADDR_IN myListenAddr;
 	myListenAddr.sin_family = AF_INET;
 	myListenAddr.sin_port = htons(9500);
